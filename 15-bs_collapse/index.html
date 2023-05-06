@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container mt-3">
+    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapse</button>
+    <div id="demo" class="collapse">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum eaque placeat, in dolor eligendi dolore repudiandae tempora numquam fugiat natus porro repellendus nam fuga, nihil obcaecati adipisci eius beatae!
+    </div>
+   </div>  
+
+   <div class="container mt-3">
+    <a href="#demo2" class="btn btn-primary" data-bs-toggle="collapse" >Simple collapse2</a>
+    <div id="demo2" class="collapse show">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum eaque placeat, in dolor eligendi dolore repudiandae tempora numquam fugiat natus porro repellendus nam fuga, nihil obcaecati adipisci eius beatae!
+    </div>
+   </div> 
+   
+   <div class="container mt-3">
+     <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">Collapsible Group Item 1</a>
+            </div>
+
+             <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque maiores dolor aliquam doloribus, quis optio ut modi facere quia necessitatibus officiis magni, assumenda ipsa nihil facilis molestias iure sapiente ea veniam repellendus velit. Illo similique possimus minima corporis corrupti.
+                </div>
+             </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseTwo">Collapsible Group Item 2</a>
+            </div>
+
+             <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque maiores dolor aliquam doloribus, quis optio ut modi facere quia necessitatibus officiis magni, assumenda ipsa nihil facilis molestias iure sapiente ea veniam repellendus velit. Illo similique possimus minima corporis corrupti.
+                </div>
+             </div>
+        </div>
+         <!-- ACCORDİON -->
+        <div class="card">
+            <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseThree">Collapsible Group Item 3</a>
+            </div>
+
+             <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, doloremque maiores dolor aliquam doloribus, quis optio ut modi facere quia necessitatibus officiis magni, assumenda ipsa nihil facilis molestias iure sapiente ea veniam repellendus velit. Illo similique possimus minima corporis corrupti.
+                </div>
+             </div>
+        </div>
+
+     </div>
+   </div>
+</body>
+</html>
