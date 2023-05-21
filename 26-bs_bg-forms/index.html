@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      .custom-range::-webkit-slider-thumb {
+    background: red;
+  }
+  
+  .custom-range::-moz-range-thumb {
+    background: gray;
+  }
+  
+  .custom-range::-ms-thumb {
+    background: gray;
+  }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+       <form>
+         <label for="sel1">
+         select list
+         </label>
+         <select class="form-select bg-danger" id="sel1" >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+         </select><br><br><br>
+          <label for="sel2">Multiple select</label>
+          <select multiple class="form-select " id="sel2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select><br><br>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+       </form><br>
+
+       <div class="container mt-3">
+        <form>
+            <div class="form-check">
+               <input type="checkbox"class="form-check-input" id="check1"checked>
+               <label class="form-check-label"for="check1">Option 1</label>
+            </div>
+            <div class="form-check">
+               <input type="checkbox"class="form-check-input" id="check2"checked>
+               <label class="form-check-label"for="check1">Option 2</label>
+            </div>
+        </form>
+       </div>
+         <br><br><br><br>
+        <form>
+            <div class="form-check">
+               <input type="radio" class="form-check-input" id="radio1"name="optradio" checked>
+                <label class="form-check-label" for="radio1">Option 1</label>
+            </div>
+            <div class="form-check form-switch">
+               <input type="radio" class="form-check-input" id="radio2"name="optradio" checked>
+                <label class="form-check-label" for="radio2">Option 2</label>
+            </div>
+            <div class="form-check">
+               <input type="radio" class="form-check-input" id="radio3"name="optradio" checked>
+                <label class="form-check-label" for="radio3">Option 3</label>
+            </div>
+            <div class="form-check ">
+               <input type="radio" class="form-check-input" id="radio4"name="optradio" checked>
+                <label class="form-check-label" for="radio4">Option 4</label>
+            </div>
+        </form><br><br><br>
+           
+
+         <form>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="mySwitch" checked>
+              <label class="form-check-label" for="mySwitch">Dark Mode</label>
+           </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="mySwitch" checked>
+              <label class="form-check-label" for="mySwitch">Dark Mode</label>
+           </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="mySwitch" checked>
+              <label class="form-check-label" for="mySwitch">Dark Mode</label>
+           </div>
+         </form><br><br><br><br>
+         <!-- 1 npm install --save @stripe/react-stripe-js @stripe/stripe-js
+
+         2 const stripePromise = loadStripe("pk_test_51MFcDWGQm6sFCRXclxSVVRSPesVeHKUBMD2mEd4Y7ObmLAouqjag85P5nOpX20WfLtaVVMNdh6ixiGhms1Wc6HnC006ttIpG3j");
+         3const [clientSecret, setClientSecret] = useState("");
+
+         4 const appearance = {
+            theme: 'stripe',
+          };
+          const options = {
+            clientSecret,
+            appearance,
+          }; -->
+         <form>
+          <label for ="customRange " 
+          class="form-label ">Custom range</label>
+          <input type="range" class="form-range custom-range"  step="10" id="customRange">
+         </form>
+
+         <form>
+           <div class="form-floating mb-3 mt-3">
+             <select class="form-select" id="sel1">
+              <option >1</option>
+              <option >2</option>
+              <option >3</option>
+              <option >4</option>
+             </select>
+             <label for="sel1" class="form-label">select list</label>
+           </div>
+         </form>
+
+
+         <form class="was-validated">
+          <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="enter username" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">lütfen alanı doldurun</div>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="enter password" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">lütfen şifreyi doldurun</div>
+          </div>
+           <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="myCheck" required>
+            <label class="form-check-label" for="myCheck">I agree terms</label>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">kutucuğu işaretleyin </div>
+           </div>
+           <button type ="submit" class="btn btn-primary">Submit</button>
+         </form>
+         <br><br><br><br><br>
+         <form class="needs-validation">
+          <div class="mb-3 mt-3">
+            <label for="uname" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="enter username" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">lütfen alanı doldurun</div>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="enter password" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">lütfen şifreyi doldurun</div>
+          </div>
+           <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="myCheck" required>
+            <label class="form-check-label" for="myCheck">I agree terms</label>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">kutucuğu işaretleyin </div>
+           </div>
+           <button type ="submit" class="btn btn-danger">Submit</button>
+         </form>
+    </div>
+</body>
+</html>
+<!-- const saveOrder = () => {
+    // toast.success("Successfully save order")
+    const today = new Date();
+    // tarih bilgisi
+    const date = today.toDateString()
+    //saat bilgisini içeriyor
+    const time = today.toLocaleTimeString();
+    const orderConfig = {
+      userID,
+      userEmail,
+      orderDate: date,
+      orderTime: time,
+      orderAmount: cartTotalAmount,
+      orderStatus: "Order Placed...",
+      cartItems,
+      shippingAddress,
+      createdAt: Timestamp.now().toDate()
+    };
+    try {
+      addDoc(collection(db,"orders"), orderConfig);
+      toast.success("Order saved")
+      dispatch(CLEAR_CART())
+      navigate("/checkout-success")
+    } catch (error) {
+      toast.error(error.message)
+    }
+  } -->
+
+  <!-- import StarsRating from 'react-star-rate'; -->
